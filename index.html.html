@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сила быть собой — клуб кундалини-йоги Жени Груздовой</title>
+<meta name="description" content="Месячный онлайн-клуб кундалини-йоги от Жени Груздовой. Старт 1 ноября.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cream: '#F7F1E8',
+        sand: '#EFE3D3',
+        blush: '#E8C9C0',
+        rose: '#C98A7E',
+        clay: '#A96B5B',
+        deep: '#4A3B34',
+        lavender: '#B9A7CE',
+        lavlight: '#E4DAEE',
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'serif'],
+        sans: ['Inter', 'sans-serif'],
+      },
+      borderRadius: { '4xl': '2.5rem' },
+      boxShadow: { soft: '0 20px 60px -25px rgba(74,59,52,.25)' },
+    }
+  }
+}
+</script>
+<style>
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #F7F1E8; color: #4A3B34; }
+h1,h2,h3,.font-serif { font-family: 'Cormorant Garamond', serif; }
+.blob { filter: blur(60px); opacity:.45; border-radius:9999px; position:absolute; pointer-events:none; }
+.card { transition: transform .4s ease, box-shadow .4s ease; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 30px 70px -30px rgba(74,59,52,.35); }
+.btn { transition: all .3s ease; }
+.btn:hover { transform: translateY(-2px); }
+.name { white-space: nowrap; }
+</style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+<header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-cream/80 backdrop-blur-md border-b border-clay/10">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="#hero" class="font-serif text-2xl md:text-3xl tracking-wide text-deep"><span class="name">Женя Груздова</span></a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#about" class="hover:text-clay transition">Обо мне</a>
+      <a href="#yoga" class="hover:text-clay transition">Кундалини-йога</a>
+      <a href="#club" class="hover:text-clay transition">Клуб</a>
+      <a href="#pricing" class="hover:text-clay transition">Тарифы</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#pricing" class="hidden sm:inline-flex btn bg-clay text-cream px-5 py-2.5 rounded-full text-sm font-medium hover:bg-deep">Выбрать тариф</a>
+      <button id="burger" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full bg-sand text-deep"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-cream border-t border-clay/10 px-6 py-5 space-y-4 text-base">
+    <a href="#about" class="block">Обо мне</a>
+    <a href="#yoga" class="block">Кундалини-йога</a>
+    <a href="#club" class="block">Клуб</a>
+    <a href="#pricing" class="block">Тарифы</a>
+    <a href="#pricing" class="btn inline-block bg-clay text-cream px-6 py-3 rounded-full font-medium">Выбрать тариф</a>
+  </div>
+</header>
+
+<section id="hero" class="relative pt-32 md:pt-44 pb-20 md:pb-28 overflow-hidden">
+  <div class="blob w-96 h-96 bg-blush -top-20 -left-24"></div>
+  <div class="blob w-80 h-80 bg-lavlight top-40 -right-24"></div>
+  <div class="relative max-w-6xl mx-auto px-5 md:px-8" data-aos="fade-up">
+    <p class="inline-flex items-center gap-2 text-sm tracking-wide uppercase text-clay mb-6"><i class="fa-solid fa-spa"></i> Старт — 1 ноября, воскресенье</p>
+    <h1 class="font-serif text-5xl md:text-7xl leading-[1.05] text-deep mb-6">Сила<br>быть собой</h1>
+    <p class="text-lg md:text-xl text-deep/80 leading-relaxed mb-8 max-w-2xl">Месячный онлайн-клуб кундалини-йоги от Жени Груздовой для тех, кто хочет вернуть себе энергию, внутреннюю опору и свободу быть собой.</p>
+    <p class="text-deep/70 mb-8 max-w-2xl">В первый день сразу проведём открывающую практику: настроимся на месяц, познакомимся с темой и начнём работу с сердечным центром.</p>
+    <div class="flex flex-wrap gap-4">
+      <a href="#pricing" class="btn bg-clay text-cream px-8 py-4 rounded-full font-medium hover:bg-deep">Выбрать тариф</a>
+      <a href="https://t.me/gruzdovajenia" target="_blank" class="btn border border-clay/40 text-deep px-8 py-4 rounded-full font-medium hover:bg-sand"><i class="fa-brands fa-telegram mr-2"></i>Написать мне в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-20 md:py-28 bg-sand/60">
+  <div class="relative max-w-6xl mx-auto px-5 md:px-8" data-aos="fade-up">
+    <p class="text-sm uppercase tracking-widest text-clay mb-4">Обо мне</p>
+    <h2 class="font-serif text-4xl md:text-5xl text-deep mb-6">Привет, я <span class="name">Женя Груздова</span></h2>
+    <div class="space-y-5 text-deep/80 leading-relaxed max-w-3xl">
+      <p>Я учитель кундалини-йоги, автор практик и пространства, где можно быть собой — без масок, спешки и необходимости всё держать под контролем.</p>
+      <p>За последние годы я прошла обучение у Даши Каболовой и глубоко погрузилась в практики работы с подсознанием, нервной и гормональной системами, женской энергией и сердечным центром.</p>
+      <p>Я знаю, как это — жить с тревогой, внутренней тяжестью и ощущением, что сил уже нет. И знаю, как постепенно, через дыхание, движение, медитацию и внимание к себе, возвращать себе спокойствие и опору.</p>
+      <p>Здесь я делюсь практиками, которые помогают мне и моим ученикам становиться ближе к себе, сильнее и свободнее.</p>
+    </div>
+  </div>
+</section>
+
+<section id="yoga" class="py-20 md:py-28 relative overflow-hidden">
+  <div class="blob w-96 h-96 bg-blush top-10 -right-32"></div>
+  <div class="relative max-w-6xl mx-auto px-5 md:px-8">
+    <div class="max-w-3xl mb-12" data-aos="fade-up">
+      <p class="text-sm uppercase tracking-widest text-clay mb-4">Практика</p>
+      <h2 class="font-serif text-4xl md:text-5xl text-deep mb-6">Что такое кундалини-йога</h2>
+      <p class="text-lg text-deep/80 leading-relaxed mb-4">Кундалини-йога — это целостная практика, в которой соединяются движение, дыхание, мантры, медитация и осознанное внимание.</p>
+      <p class="text-deep/70 leading-relaxed">Это не про сложные позы и не про то, чтобы «стать гибкой». Через регулярную практику мы учимся замечать, где тело и психика держат напряжение, страх, обиду или усталость — и бережно помогаем энергии снова течь.</p>
+    </div>
+    <h3 class="font-serif text-3xl text-deep mb-8" data-aos="fade-up">Что делает кундалини-йога?</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="card bg-white/70 rounded-3xl p-6 shadow-soft" data-aos="fade-up"><i class="fa-solid fa-brain text-clay text-xl mb-3"></i><p class="text-deep/80">Укрепляет и балансирует работу нервной системы.</p></div>
+      <div class="card bg-white/70 rounded-3xl p-6 shadow-soft" data-aos="fade-up" data-aos-delay="50"><i class="fa-solid fa-leaf text-clay text-xl mb-3"></i><p class="text-deep/80">Повышает стрессоустойчивость и помогает мягче реагировать на сложные ситуации.</p></div>
+      <div class="card bg-white/70 rounded-3xl p-6 shadow-soft" data-aos="fade-up" data-aos-delay="100"><i class="fa-solid fa-heart text-clay text-xl mb-3"></i><p class="text-deep/80">Помогает стать спокойнее и осознаннее: меньше идти на поводу у эмоций и привычных реакций.</p></div>
+      <div class="card bg-white/70 rounded-3xl p-6 shadow-soft" data-aos="fade-up" data-aos-delay="150"><i class="fa-solid fa-seedling text-clay text-xl mb-3"></i><p class="text-deep/80">Поддерживает работу гормональной системы и общую гармонию в организме.</p></div>
+      <div class="card bg-white/70 rounded-3xl p-6 shadow-soft" data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-arrows-rotate text-clay text-xl mb-3"></i><p class="text-deep/80">Помогает замечать и менять негативные шаблоны, страхи, ограничения и неработающие установки.</p></div>
+      <div class="card bg-white/70 rounded-3xl p-6 shadow-soft" data-aos="fade-up" data-aos-delay="250"><i class="fa-solid fa-eye text-clay text-xl mb-3"></i><p class="text-deep/80">Развивает интуицию и способность слышать себя.</p></div>
+      <div class="card bg-white/70 rounded-3xl p-6 shadow-soft" data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-dumbbell text-clay text-xl mb-3"></i><p class="text-deep/80">Повышает выносливость, укрепляет физическое тело и поддерживает иммунитет.</p></div>
+      <div class="card bg-white/70 rounded-3xl p-6 shadow-soft" data-aos="fade-up" data-aos-delay="350"><i class="fa-solid fa-ban text-clay text-xl mb-3"></i><p class="text-deep/80">Помогает освободиться от негативных привычек и жить более осознанно.</p></div>
+      <div class="card bg-white/70 rounded-3xl p-6 shadow-soft" data-aos="fade-up" data-aos-delay="400"><i class="fa-solid fa-sun text-clay text-xl mb-3"></i><p class="text-deep/80">Балансирует энергию, благодаря чему тело и внутреннее состояние получают больше ресурса.</p></div>
+    </div>
+    <p class="font-serif text-2xl md:text-3xl text-deep mt-12 max-w-3xl" data-aos="fade-up">Кундалини-йога — это не про то, чтобы стать другим человеком. Это про то, чтобы вернуть себе ясность, силу и способность выбирать, как реагировать на жизнь.</p>
+  </div>
+</section>
+
+<section id="club" class="py-20 md:py-28 bg-deep text-cream relative overflow-hidden">
+  <div class="blob w-96 h-96 bg-rose/40 -top-20 -left-24"></div>
+  <div class="blob w-80 h-80 bg-lavlight/40 bottom-0 -right-24"></div>
+  <div class="relative max-w-6xl mx-auto px-5 md:px-8">
+    <div class="max-w-3xl mb-14" data-aos="fade-up">
+      <p class="text-sm uppercase tracking-widest text-blush mb-4">Клуб «Сила быть собой» · Старт: 1 ноября, воскресенье</p>
+      <h2 class="font-serif text-4xl md:text-6xl mb-8">Вернуть связь с собой</h2>
+      <div class="space-y-5 text-cream/85 leading-relaxed">
+        <p>Бывает, что дел, людей и забот много, а внутри остаётся усталость, напряжение и ощущение, что живёшь не совсем свою жизнь.</p>
+        <p>Мы привыкаем быть сильными, удобными, собранными. Держим себя в руках, контролируем эмоции, носим в себе старые обиды и невысказанные чувства. И постепенно теряем контакт с собой.</p>
+        <p>В клубе «Сила быть собой» мы месяц будем возвращать себе эту связь.</p>
+        <p>Через практики кундалини-йоги, дыхание, медитации и работу с сердечным центром мы будем мягко отпускать то, что сжимает и тянет назад, и раскрывать энергию, которая уже есть внутри.</p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white/5 border border-white/10 rounded-4xl p-8 backdrop-blur" data-aos="fade-right">
+        <h3 class="font-serif text-3xl mb-6">Для кого этот клуб</h3>
+        <ul class="space-y-4 text-cream/85">
+          <li class="flex gap-3"><i class="fa-solid fa-check text-blush mt-1"></i>Если чувствуешь усталость, тревогу или внутреннее напряжение.</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-blush mt-1"></i>Если сложно отпустить прошлое, и оно продолжает влиять на настоящее.</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-blush mt-1"></i>Если хочется перестать закрываться и снова чувствовать тепло, радость и близость.</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-blush mt-1"></i>Если устал быть сильным, всё контролировать и справляться в одиночку.</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-blush mt-1"></i>Если хочешь регулярную практику, поддержку и пространство, где можно быть честным с собой.</li>
+        </ul>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-4xl p-8 backdrop-blur" data-aos="fade-left">
+        <h3 class="font-serif text-3xl mb-6">Что будет в клубе</h3>
+        <ul class="space-y-4 text-cream/85">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-dot text-blush mt-1"></i>Практики кундалини-йоги — в записи или вживую, в зависимости от тарифа.</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-dot text-blush mt-1"></i>Медитации и дыхательные практики для сердечного центра.</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-dot text-blush mt-1"></i>Практики на отпускание, принятие себя и возвращение внутренней опоры.</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-dot text-blush mt-1"></i>Поддержка и общение в закрытом пространстве.</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-dot text-blush mt-1"></i>Мягкие задания и рекомендации для практики между занятиями.</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-dot text-blush mt-1"></i>Моё сопровождение и ответы на вопросы.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-10 text-cream/70 max-w-3xl" data-aos="fade-up">Мы не будем «выдавливать» боль или форсировать перемены.<br>Всё будет происходить бережно, через тело, дыхание и внимание к себе.</p>
+  </div>
+</section>
+
+<section id="pricing" class="py-20 md:py-28">
+  <div class="max-w-7xl 2xl:max-w-[88rem] mx-auto px-5 md:px-8">
+    <div class="max-w-3xl mb-14" data-aos="fade-up">
+      <p class="text-sm uppercase tracking-widest text-clay mb-4">Тарифы клуба</p>
+      <h2 class="font-serif text-4xl md:text-5xl text-deep mb-6">Выбери свой формат участия</h2>
+      <p class="text-deep/80 leading-relaxed">Три формата участия в месячном клубе: от регулярной практики в группе до глубокого личного сопровождения.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 items-stretch">
+      <div class="card bg-white rounded-4xl p-8 shadow-soft flex flex-col" data-aos="fade-up">
+        <h3 class="font-serif text-3xl text-deep mb-2">Базовый</h3>
+        <p class="text-deep/70 text-sm mb-6">Для тех, кто хочет регулярно практиковать в группе и получить поддержку в течение месяца.</p>
+        <p class="font-serif text-4xl text-clay mb-6">8 800 ₽</p>
+        <ul class="space-y-3 text-deep/80 text-sm mb-8 flex-1">
+          <li class="flex gap-3"><i class="fa-solid fa-check text-lavender mt-1"></i>Встречи 2 раза в неделю</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-lavender mt-1"></i>8 практик в месяц</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-lavender mt-1"></i>Поддержка на протяжении всего клуба</li>
+        </ul>
+        <a href="https://t.me/gruzdovajenia" target="_blank" class="btn text-center border border-clay/40 text-deep px-6 py-3.5 rounded-full font-medium hover:bg-lavlight/60">Выбрать тариф</a>
+      </div>
+      <div class="card bg-clay text-cream rounded-4xl p-8 shadow-soft flex flex-col" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="font-serif text-3xl mb-2">Личное ведение</h3>
+        <p class="text-cream/80 text-sm mb-6">Более глубокий формат: участие во всех встречах клуба плюс два персональных занятия со мной.</p>
+        <p class="font-serif text-4xl mb-6">12 400 ₽</p>
+        <p class="text-sm font-medium mb-3">Всё, что входит в базовый тариф:</p>
+        <ul class="space-y-3 text-cream/90 text-sm mb-6 flex-1">
+          <li class="flex gap-3"><i class="fa-solid fa-check text-blush mt-1"></i>Доступ ко всем встречам базового тарифа</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-blush mt-1"></i>2 персональных занятия со мной</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-blush mt-1"></i>Консультация и подбор личной практики на месяц — с учётом вашего запроса и состояния</li>
+        </ul>
+        <div class="bg-white/10 rounded-2xl p-4 mb-8">
+          <p class="text-sm font-semibold mb-2">Подарок:</p>
+          <p class="text-cream/90 text-sm">Практика для укрепления иммунитета в записи — можно включать, когда чувствуете усталость, простуду или вирус, чтобы быстрее восстановиться.</p>
+        </div>
+        <a href="https://t.me/gruzdovajenia" target="_blank" class="btn text-center bg-cream text-deep px-6 py-3.5 rounded-full font-medium hover:bg-blush">Выбрать тариф</a>
+      </div>
+      <div class="card bg-white rounded-4xl p-8 shadow-soft flex flex-col" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="font-serif text-3xl text-deep mb-2">«Глубокое исцеление»</h3>
+        <p class="text-deep/70 text-sm mb-6">Самый внимательный формат для тех, кому важно индивидуальное сопровождение и глубокая личная работа.</p>
+        <p class="font-serif text-4xl text-clay mb-6">19 800 ₽</p>
+        <p class="text-sm font-medium mb-3">Всё, что входит в клуб:</p>
+        <ul class="space-y-3 text-deep/80 text-sm mb-6 flex-1">
+          <li class="flex gap-3"><i class="fa-solid fa-check text-lavender mt-1"></i>Доступ к практикам клуба</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-lavender mt-1"></i>4 персональных занятия со мной</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-lavender mt-1"></i>Подарочная практика для иммунитета в записи — подходит при простуде и вирусных состояниях, помогает быстрее восстановиться</li>
+          <li class="flex gap-3"><i class="fa-solid fa-check text-lavender mt-1"></i>Сеанс целения в подарок</li>
+        </ul>
+        <p class="text-xs text-deep/60 mb-8">Важно: личный сеанс целения проходит у меня дома в Москве и доступен только для жителей Москвы.</p>
+        <a href="https://t.me/gruzdovajenia" target="_blank" class="btn text-center border border-clay/40 text-deep px-6 py-3.5 rounded-full font-medium hover:bg-lavlight/60">Выбрать тариф</a>
+      </div>
+    </div>
+    <div class="mt-16 pt-12 border-t border-clay/20" data-aos="fade-up">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <p class="text-sm uppercase tracking-widest text-clay mb-4">Отдельные занятия</p>
+        <h3 class="font-serif text-3xl md:text-4xl text-deep mb-4">Индивидуальные занятия</h3>
+        <p class="text-deep/80 leading-relaxed">Этот формат не входит в тарифы клуба — здесь можно выбрать только индивидуальные занятия, без участия в группе.</p>
+      </div>
+      <div class="card max-w-xl mx-auto bg-sand/60 border border-dashed border-clay/40 rounded-4xl p-8 shadow-soft">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div>
+            <p class="font-serif text-2xl text-deep mb-2">4 персональных занятия</p>
+            <ul class="space-y-2 text-deep/80 text-sm">
+              <li class="flex gap-3"><i class="fa-solid fa-check text-lavender mt-1"></i>Индивидуальный формат</li>
+              <li class="flex gap-3"><i class="fa-solid fa-check text-lavender mt-1"></i>Удобное для вас время</li>
+              <li class="flex gap-3"><i class="fa-solid fa-check text-lavender mt-1"></i>Практика, подобранная под ваш запрос и состояние</li>
+            </ul>
+          </div>
+          <div class="text-left md:text-right">
+            <p class="font-serif text-4xl text-clay mb-5">10 000 ₽</p>
+            <a href="https://t.me/gruzdovajenia" target="_blank" class="btn inline-block bg-clay text-cream px-6 py-3.5 rounded-full font-medium hover:bg-deep">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 md:py-32 relative overflow-hidden bg-gradient-to-br from-blush via-sand to-lavlight">
+  <div class="blob w-96 h-96 bg-rose/40 -bottom-24 -left-24"></div>
+  <div class="relative max-w-6xl mx-auto px-5 md:px-8 text-center" data-aos="zoom-in">
+    <h2 class="font-serif text-4xl md:text-6xl text-deep mb-6">Твоя сила уже внутри тебя</h2>
+    <p class="text-lg text-deep/80 mb-4">Если чувствуешь, что пора вернуть себе спокойствие, тепло и контакт с собой — приходи в клуб «Сила быть собой».</p>
+    <p class="text-deep/70 mb-10">Мы начнём 1 ноября.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://t.me/gruzdovajenia" target="_blank" class="btn bg-deep text-cream px-8 py-4 rounded-full font-medium hover:bg-clay">Записаться на курс</a>
+      <a href="https://t.me/gruzdovajenia" target="_blank" class="btn border border-deep/30 text-deep px-8 py-4 rounded-full font-medium hover:bg-white/40"><i class="fa-brands fa-telegram mr-2"></i>Написать мне в Telegram</a>
+      <a href="https://www.instagram.com/gruzdovajenia/" target="_blank" class="btn border border-deep/30 text-deep px-8 py-4 rounded-full font-medium hover:bg-white/40"><i class="fa-brands fa-instagram mr-2"></i>Мой Instagram</a>
+    </div>
+    <p class="mt-10 text-deep/70"><span class="name">@gruzdovajenia</span> · С любовью, Женя.</p>
+  </div>
+</section>
+
+<script>
+AOS.init({ duration: 800, once: true, offset: 80, easing: 'ease-out-cubic' });
+const burger = document.getElementById('burger');
+const menu = document.getElementById('mobileMenu');
+burger.addEventListener('click', () => menu.classList.toggle('hidden'));
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('shadow-soft', window.scrollY > 20);
+});
+</script>
+</body>
+</html>
